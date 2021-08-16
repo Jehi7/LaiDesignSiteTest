@@ -1,0 +1,100 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --textGrey: #E0E0E0;
+  --bgGrey: #EDEFF5;
+  --bgDark: #0D0D2B;
+  --bgLight: #F8F9FB;
+  --Purple: #2B076E;
+  --Pink: #F28F8F;
+  --blueHighLight: #3671E9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+section {
+  width: 100vw;;
+  max-width: 100vw;
+  padding: 4rem 8vw;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--textGrey);
+}
+
+body, button, textarea, input, a{
+  font: 400 1rem 'Rubik', sans-serif;
+}
+
+button{
+  height: 4rem;
+  padding: 0 2rem;
+
+  cursor: pointer;
+
+  background-color: var(--blueHighLight);
+  color: var(--white);
+
+  border: none;
+  border-radius: 2rem;
+
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #4a47a3;
+}
+
+a{
+  text-decoration: none;
+  font-style: normal;
+  color: var(--textGrey);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media(max-width: 1080px) {
+  html {
+      font-size: 81.25%;
+  }
+}
+ 
+@media(max-width: 750px) {
+  html {
+      font-size:  81.25%;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 400px) {
+  html {
+      font-size: 75%;
+  }
+}
+
+.opened {
+  transform: translateX(0);
+}

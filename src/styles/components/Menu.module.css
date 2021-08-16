@@ -1,0 +1,28 @@
+.menuContainer {
+    height: 15vh;
+    width: 100vw;
+    padding: 0 8vw;
+
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+}
+
+.linksContainer {
+    display: flex;
+    align-items: center;
+}
+
+.linksContainer div a,
+.linksContainer p {
+    margin-right: 2rem;
+    color: var(--white);
+}
